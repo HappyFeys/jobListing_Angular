@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@mixin responsive($width) {
+    @media only screen and (min-width: $width) {
+        @content;
+    }
+}
+
+:root{
+    //Primary
+    --darkCyan: hsl(100, 29%, 50%);
+
+    //Neutral
+    --white: hsl(0, 0%, 100%);
+    --lightGrayCyanBG: hsl(180, 52%,96%);
+    --lightGrayCyanFilter: hsl(180, 31%, 95%);
+    --darkGrayishCyan: hsl(180, 8%, 52%);
+    --veryDarkGrayishCyan: hsl(180, 14%, 20%);
+}
+
+body{
+    font-size: 15px;
+    font-family: "League Spartan", sans-serif;
+}
