@@ -1,27 +1,50 @@
-# JobListing
+# Frontend Mentor - Job listings with filtering solution
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
+Projet réalisé dans le cadre de ma formation à BeCode. Ce projet avait pour objectif d'apprendre quelques notions d'Angular. Ceci est une solution au challenge [Job listings with filtering challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt).
 
-## Development server
+## Table of contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-## Code scaffolding
+## Overview
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### The challenge
 
-## Build
+Les utilisateurs doivent pouvoir
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Visualiser la mise en page optimale du site en fonction de la taille de l'écran de leur appareil
+- Filtrer les offres d'emploi en fonction des catégories
 
-## Running unit tests
+### Screenshot
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![desktop](./public/desktop.png)
 
-## Running end-to-end tests
+## My process
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Built with
 
-## Further help
+- Angular
+- Semantic HTML5 markup
+- SCSS custom properties
+- Flexbox
+- Mobile-first workflow
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Author
+
+- Github: [Dylan Feys](https://github.com/HappyFeys)
+
+
+## Remarque
+
+Filtre à continuer à travailler ... Lorsque je filtre, cela fonctionne. Par contre, si je retire un filtre, il ne remet pas les précédentes, sauf si tous les filtres sont retiré.
