@@ -1,0 +1,58 @@
+<div class="filter-list">
+    <div class="filter-section">
+        <p>Level</p>
+        <div class="filter-item">
+            <label for="junior">Junior</label><input type="checkbox" name="junior" id="junior" (change)="addFilter($event, 'Junior')">
+        </div>
+        <div class="filter-item">
+            <label for="midweight">Midweight</label><input type="checkbox" name="midweight" id="midweight" (change)="addFilter($event, 'Midweight')">
+        </div>
+        <div class="filter-item">
+            <label for="Senior">Senior</label><input type="checkbox" name="senior" id="senior" (change)="addFilter($event, 'Senior')">
+        </div>
+    </div>
+    <div class="filter-section">
+        <div class="filter-item">
+            <label for="news">News</label><input type="checkbox" name="news" id="news" (change)="addFilter($event, 'News')">
+        </div>
+        <div class="filter-item">
+            <label for="featured">Featured</label><input type="checkbox" name="featured" id="featured" (change)="addFilter($event, 'Featured')">
+        </div>
+    </div>
+    <div class="filter-section">
+        <p>Languages</p>
+        <div class="filter-item">
+            <label for="html">HTML</label><input type="checkbox" name="html" id="html" (change)="addFilter($event, 'Html')">
+        </div>
+        <div class="filter-item">
+            <label for="css">CSS</label><input type="checkbox" name="css" id="css" (change)="addFilter($event, 'Css')">
+        </div>
+        <div class="filter-item">
+            <label for="javascript">Javascript</label><input type="checkbox" name="javascript" id="javascript" (change)="addFilter($event, 'Javascript')">
+        </div>
+        <div class="filter-item">
+            <label for="python">Python</label><input type="checkbox" name="python" id="python" (change)="addFilter($event, 'Python')">
+        </div>
+        <div class="filter-item">
+            <label for="ruby">Ruby</label><input type="checkbox" name="ruby" id="ruby" (change)="addFilter($event, 'Ruby')">
+        </div>
+    </div>
+    <div class="filter-section">
+        <p>Tools</p>
+        <div class="filter-item">
+            <label for="react">React</label><input type="checkbox" name="react" id="react" (change)="addFilter($event, 'React')">
+        </div>
+        <div class="filter-item">
+            <label for="sass">Sass</label><input type="checkbox" name="sass" id="sass" (change)="addFilter($event, 'Sass')">
+        </div>
+        <div class="filter-item">
+            <label for="ror">RoR</label><input type="checkbox" name="ror" id="ror" (change)="addFilter($event, 'RoR')">
+        </div>
+        <div class="filter-item">
+            <label for="vue">Vue</label><input type="checkbox" name="vue" id="vue" (change)="addFilter($event, 'Vue')">
+        </div>
+        <div class="filter-item">
+            <label for="django">Django</label><input type="checkbox" name="django" id="django" (change)="addFilter($event, 'Django')">
+        </div>
+    </div>
+</div>

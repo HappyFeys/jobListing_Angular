@@ -1,0 +1,88 @@
+@import './../../styles/mixins';
+
+.card{
+    width: 80%;
+    margin: 40px auto;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    box-shadow: var(--darkCyan) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+
+    @include responsive(768px){
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    img{
+        width: 50px;
+        height: auto;
+        position: absolute;
+        top: -20px;
+    }
+    .card__header{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+        .card__company{
+            color: var(--darkCyan);
+        }
+        .card__new{
+            background-color: var(--darkCyan);
+            color: var(--white);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .card__featured{
+            background-color: var(--veryDarkGrayishCyan);
+            color: var(--white);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    }
+    .card__body{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 0;
+        .card__position{
+            font-weight: 700;
+        }
+        .card__information{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            p{
+                color: var(--darkGrayishCyan);
+            }
+            span{
+                color: var(--darkGrayishCyan);
+            }
+        }
+    }
+    hr{
+        border: 1px solid var(--lightGrayCyanFilter);
+        @include responsive(768px){
+            display: none;
+        }
+    }
+    .card__footer{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 10px 0;
+        @include responsive(768px){
+            align-items: center;
+        }
+        p{
+            color: var(--darkCyan);
+            background-color: var(--lightGrayCyanBG);
+            padding: 5px 10px;
+            font-weight: 700;
+            border-radius: 5px;
+        }
+    }
+}

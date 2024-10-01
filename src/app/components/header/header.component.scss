@@ -1,0 +1,15 @@
+@import './../../styles/mixins';
+
+header{
+    height: 100px;
+    width: 100%;
+    margin-bottom: 50px;
+    background-color: var(--darkCyan);
+    background-image: url('/images/bg-header-mobile.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include responsive(768px){
+        background-image: url('/images/bg-header-desktop.svg');
+    }
+}

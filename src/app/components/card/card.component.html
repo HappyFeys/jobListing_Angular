@@ -1,0 +1,27 @@
+<div class="card" [ngStyle]="job.featured ? {'border-left': '5px solid var(--darkCyan)'} : {}">
+    <div>
+        <img src="{{job.logo}}" class="card__img" alt="image job">
+        <div class="card__header">
+            <p class="card__company">{{job.company}}</p>
+            <p *ngIf="job.new" class="card__new">NEW!</p>
+            <p *ngIf="job.featured" class="card__featured">FEATURED</p>
+        </div>
+        <div class="card__body">
+            <p class="card__position">{{job.position}}</p>
+            <div class="card__information">
+                <p>{{job.postedAt}}</p>
+                <span>&bull;</span>
+                <p>{{job.contract}}</p>
+                <span>&bull;</span>
+                <p>{{job.location}}</p>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="card__footer">
+        <p>{{job.role}}</p>
+        <p>{{job.level}}</p>
+        <p *ngFor="let language of job.languages">{{language}}</p>
+        <p *ngFor="let tool of job.tools">{{tool}}</p>
+    </div>
+</div>

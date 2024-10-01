@@ -1,12 +1,6 @@
-@mixin responsive($width) {
-    @media only screen and (min-width: $width) {
-        @content;
-    }
-}
-
 :root{
     //Primary
-    --darkCyan: hsl(100, 29%, 50%);
+    --darkCyan: hsl(180, 29%, 50%);
 
     //Neutral
     --white: hsl(0, 0%, 100%);
@@ -16,7 +10,14 @@
     --veryDarkGrayishCyan: hsl(180, 14%, 20%);
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-size: 15px;
     font-family: "League Spartan", sans-serif;
+    background-color: var(--lightGrayCyanBG);
 }

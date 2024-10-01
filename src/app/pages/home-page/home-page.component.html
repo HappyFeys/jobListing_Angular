@@ -1,0 +1,3 @@
+<app-header></app-header>
+<app-filter-list (filterChange)="onFilterChange($event)"></app-filter-list>
+<app-card [job]="job" *ngFor="let job of jobs"></app-card>
